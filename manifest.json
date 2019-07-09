@@ -1,0 +1,36 @@
+{
+  "name": "avantlink",
+  "vendor": "vtex",
+  "version": "1.0.1",
+  "title": "Avantlink",
+  "description": "Avantlink",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "billingOptions": {
+    "termsURL": "",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "free": true
+  },
+  "builders": {
+    "pixel": "0.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x"
+  },
+  "settingsSchema": {
+    "title": "Avantlink",
+    "type": "object",
+    "properties": {
+      "siteId": {
+        "title": "Site ID",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

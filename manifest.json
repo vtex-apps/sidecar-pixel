@@ -1,9 +1,9 @@
 {
-  "name": "avantlink",
+  "name": "sidecar-pixel",
   "vendor": "vtex",
-  "version": "1.0.1",
-  "title": "Avantlink",
-  "description": "Avantlink",
+  "version": "1.0.0",
+  "title": "Sidecar",
+  "description": "Sidecar first party integration.",
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },
@@ -23,10 +23,14 @@
     "vtex.pixel-interfaces": "1.x"
   },
   "settingsSchema": {
-    "title": "Avantlink",
+    "title": "Sidecar",
     "type": "object",
     "properties": {
-      "siteId": {
+      "domain": {
+        "title": "Site Domain",
+        "type": "string"
+      },
+      "id": {
         "title": "Site ID",
         "type": "string"
       }

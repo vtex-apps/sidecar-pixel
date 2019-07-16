@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- App build. Use fixed builder-hub.
+
 ## [1.0.2] - 2019-07-16
 
 ### Fixed

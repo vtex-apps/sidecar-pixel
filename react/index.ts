@@ -38,7 +38,7 @@ function addTrackingLib() {
 }
 
 function addMetrics(order: OrderPlacedData) {
-  var sidecar = window.sidecar || {}
+  window.sidecar = window.sidecar || {}
 
   type Promo = { name: string; amount: number }
   const promosMap = order.transactionProducts.reduce<Record<string, Promo>>(
@@ -64,7 +64,7 @@ function addMetrics(order: OrderPlacedData) {
     {}
   )
 
-  sidecar.transactions = {
+  window.sidecar.transactions = {
     add: true,
     data: {
       order_id: order.transactionId,
